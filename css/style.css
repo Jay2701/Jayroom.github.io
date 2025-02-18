@@ -56,9 +56,9 @@ body {
     align-items: center;
     height: 60vh;
     background: url("/img/11.png") no-repeat center center;
- 
     background-size: cover;
 }
+
 
 .title {
     margin-bottom: 40px;
