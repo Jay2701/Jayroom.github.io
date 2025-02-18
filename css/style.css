@@ -55,7 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60vh;
-    background: url("img/11.png") no-repeat center center;
+    background: url("/img/11.png") no-repeat center center;
  
     background-size: cover;
 }
@@ -154,7 +154,7 @@ p {
 
 .price {
     
-    background: url("img/back2.jpg") no-repeat center;
+    background: url("../img/back2.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
