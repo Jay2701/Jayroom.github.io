@@ -55,7 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60vh;
-    background: url("/img/11.png") no-repeat center center;
+    background: url("img/11.png") no-repeat center center;
  
     background-size: cover;
 }
