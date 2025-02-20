@@ -218,8 +218,6 @@ p {
     background-size: cover;
 }
 
-
-
 .about{
     background: #303030;
     padding: 50px 0;
@@ -232,7 +230,6 @@ p {
     flex-wrap: wrap;
 }
 
-
 .box-container2 .btn {
     background-color: #fbff00; /* Cambia el color de fondo */
     color: #171717; /* Cambia el color del texto */
@@ -244,10 +241,6 @@ p {
     color: #fbff00; /* Cambia el color del texto al pasar el mouse */
     border: 2px solid #171717; /* Cambia el borde al pasar el mouse */
 }
-
-
-
-
 
 .box-container2 .box {
     width: 250px;
@@ -309,7 +302,15 @@ p {
     text-decoration: none;
     margin-top: 20px;
 }
-
+footer {
+    background-color: #171717; 
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-align: center;
+    padding: -10px 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 @media (max-width: 480px) {
     .title {
         font-size: 30px;
@@ -357,16 +358,4 @@ p {
     .navbar {
         display: none;
     }
-}
 
-}
-
-footer {
-    background-color: #171717; 
-    color: rgb(0, 0, 0); /* Color del texto */
-    text-align: center;
-    padding: -10px 0px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
