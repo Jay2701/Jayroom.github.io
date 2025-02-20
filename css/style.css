@@ -304,12 +304,40 @@ p {
 }
 footer {
     background-color: #171717; 
-    color: rgb(0, 0, 0); /* Color del texto */
+    color: #ffffff; /* Cambia el color del texto a blanco para mejor visibilidad */
     text-align: center;
-    padding: -10px 0px;
+    padding: -15px 0; /* Ajusta el padding según sea necesario */
+    height: auto; /* Ajusta la altura según sea necesario */
     position: fixed;
     width: 100%;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery {
+    display: flex; /* Hace que las imágenes estén una al lado de la otra */
+    justify-content: center; /* Centra las imágenes */
+    gap: 15px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se acomoden en varias líneas si no caben */
+}
+
+.gallery img {
+    width: 30%; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra en las imágenes */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Efecto de transición */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+.titlep {
+    color: #ffffff;
+    font-size: 10px;
+    margin: 20px;
 }
 @media (max-width: 480px) {
     .title {
