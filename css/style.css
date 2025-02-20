@@ -55,7 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60vh;
-    background: url("https://jay2701.github.io/jayroom.github.io/img/11.png") no-repeat center center;
+    background: url("/img/11.png") no-repeat center center;
     background-size: cover;
     
     
@@ -66,7 +66,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 60vh;
-    background: url("https://jay2701.github.io/jayroom.github.io/img/11.png") no-repeat center center;
+    background: url("/img/11.png") no-repeat center center;
     background-size: cover;
 
 }
@@ -115,11 +115,16 @@ p {
 }
 
 .saus {
-    padding: 460px 0;
-    background: #303030;
+    
+    padding: 400px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: url("/img/37.jpg") no-repeat center center;
+    background-size: cover;
+    
 }
-
-
 .sau {
     padding: 50px 0;
     background: #303030;
@@ -173,7 +178,8 @@ p {
 }
 
 .price {
-    background: url("https://jay2701.github.io/jayroom.github.io/img/back2.JPG") no-repeat center center;
+    
+    background: url("../img/back2.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
@@ -182,10 +188,10 @@ p {
 
 .prices {
     background: #171717;
-    padding: 460px;
-    background: url("https://jay2701.github.io/jayroom.github.io/img/back2.JPG") no-repeat center;
+    padding: 180px 0;
+    background: url("../img/back2.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: auto;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -204,8 +210,12 @@ p {
 }
 
 .abouts{
-    background: #303030;
-    padding: 460px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: url("/img/32.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 
@@ -275,7 +285,7 @@ p {
 }
 
 .contacts {
-    padding: 460px;
+    padding: 380px;
     background: #171717;
 }
 
@@ -305,13 +315,37 @@ p {
         font-size: 30px;
         margin-top: 60px;
     }
+    .saus {
+        height: 120vh;
+        padding: 120px 0;
+    }
     .sau {
         height: 120vh;
         padding: 120px 0;
     }
+    .abouts {
+        height: 130vh;
+        padding: 170px 0;
+    }
     .about {
         height: 130vh;
         padding: 175px 0;
+    }
+    .headers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Asegúrate de que la altura sea 100vh */
+        padding: 0; /* Elimina el padding para subir el contenido */
+        background: url("/img/11.png") no-repeat center center;
+        background-size: cover;
+    }
+    .headers .title {
+        margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ffffff;
     }
     .footer-section {
         display: flex;
@@ -323,8 +357,6 @@ p {
     .navbar {
         display: none;
     }
-
 }
-
 
 }
