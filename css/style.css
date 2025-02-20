@@ -23,11 +23,11 @@ body {
 
 .navbar {
     display: flex;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .logo{
-    margin-left: 30px;
+    margin-left: 25px;
 }
 .logo a {
     text-decoration: none;
@@ -42,12 +42,23 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 12px;
 
 }
 
 .navbar a:hover {
-    background: #e91e63;
+    background: #303030;
+}
+
+.headers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: url("/img/11.png") no-repeat center center;
+    background-size: cover;
+    
+    
 }
 
 .header {
@@ -55,10 +66,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 60vh;
-    background: url("https://jay2701.github.io/jayroom.github.io/img/11.png") no-repeat center center;
+    background: url("/img/11.png") no-repeat center center;
     background-size: cover;
-}
 
+}
 
 .title {
     margin-bottom: 40px;
@@ -78,17 +89,20 @@ p {
 
 .btn {
     display: inline-block;
-    margin: 15px;
-    padding: 10px 30px;
+    margin: -15px;
+    padding: 0;
     border: 2px solid #fbff00;
     color:#171717;
     text-decoration: none;
     background: #fbff00;   
+    border-radius: 10px;
 }
 
 
 .btn:hover {
-    background: none;
+    background: #303030;
+    color: #fbff00;
+
 }
 
 .content {
@@ -99,6 +113,12 @@ p {
     align-items: center;
 
 }
+
+.saus {
+    padding: 460px 0;
+    background: #303030;
+}
+
 
 .sau {
     padding: 50px 0;
@@ -154,23 +174,42 @@ p {
 
 .price {
     
-    background: url("https://jay2701.github.io/jayroom.github.io/img/back2.JPG") no-repeat center center;
+    background: url("../img/back2.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    text-align: center;
+    
+}
+
+.prices {
+    background: #171717;
+    padding: 460px;
+    background: url("../img/back2.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: auto;
     text-align: center;
 }
 
 .price .btn {
-    background-color: #303030; /* Cambia el color de fondo */
-    color: #fbff00; /* Cambia el color del texto */
-    border: 2px solid #303030; /* Cambia el borde */
+    background-color: #fbff00; /* Cambia el color de fondo */
+    padding: 0;
+    color: #171717; /* Cambia el color del texto */
+    border: 2px solid #fbff00; /* Cambia el borde */
+    border-radius: 10px;
 }
 
 .price .btn:hover {
-    background-color: #fbff00; /* Cambia el color de fondo al pasar el mouse */
-    color: #171717; /* Cambia el color del texto al pasar el mouse */
+    background-color: #303030; /* Cambia el color de fondo al pasar el mouse */
+    color: #fbff00; /* Cambia el color del texto al pasar el mouse */
     border: 2px solid #fbff00; /* Cambia el borde al pasar el mouse */
 }
+
+.abouts{
+    background: #303030;
+    padding: 460px 10px;
+}
+
+
 
 .about{
     background: #303030;
@@ -234,6 +273,11 @@ p {
 .box-container2 .box .stars i {
     font-size: 15px;
     color: #fbff00;
+}
+
+.contacts {
+    padding: 460px;
+    background: #171717;
 }
 
 .contact {
