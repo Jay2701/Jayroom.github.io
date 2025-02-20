@@ -300,21 +300,18 @@ p {
     margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-    p{
-        padding: -0 -30px;
-    }
-    .title{
-        margin-top: 90px;
-        font-size: 40px;
+@media (max-width: 480px) {
+    .title {
+        font-size: 30px;
+        margin-top: 60px;
     }
     .sau {
-        height: 155vh;
-        padding:  10px;
+        height: 120vh;
+        padding: 120px 0;
     }
     .about {
-        height: 155vh;
-        padding: 70px 0;
+        height: 130vh;
+        padding: 175px 0;
     }
     .footer-section {
         display: flex;
@@ -326,7 +323,6 @@ p {
     .navbar {
         display: none;
     }
-
 
 }
 
