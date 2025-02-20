@@ -360,3 +360,13 @@ p {
 }
 
 }
+
+footer {
+    background-color: #171717; 
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-align: center;
+    padding: -10px 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
