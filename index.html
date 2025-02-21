@@ -194,7 +194,166 @@
             </figure>
 
         </div>
+  <!-- Caja de comentarios -->
+    <div class="comment-box">
+        <h2>Deja tu comentario</h2>
+        <textarea id="commentInput" placeholder="Escribe tu comentario..."></textarea>
+        <button onclick="addComment()">Enviar Comentario</button>
+    </div>
+        
 
+    </section>
+
+<footer>
+    <h1 class="titlep">Jayroom © 2025 Derechos Reservados.</h1>
+</footer>
+
+  <script src="js/java.js"></script>
+
+
+
+
+
+
+
+
+
+
+  <style>
+    /* Caja de comentarios profesional */
+    .comment-box {
+        width: 90%;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .comment-box h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    textarea {
+        width: 80%;
+        height: 100px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        resize: none;
+        outline: none;
+    }
+
+    button {
+        width: 45%;
+        padding: 12px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .comments-section {
+        margin-top: 20px;
+    }
+
+    .comment {
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .comment span {
+        flex-grow: 1;
+        color: #555;
+    }
+
+    .delete-btn {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .delete-btn:hover {
+        background-color: #c0392b;
+    }
+</style>
+
+
+
+<!-- Caja de comentarios -->
+
+
+<script>
+    // Cargar comentarios desde localStorage al cargar la página
+    document.addEventListener("DOMContentLoaded", loadComments);
+
+    // Función para agregar un comentario
+    function addComment() {
+        let commentText = document.getElementById("commentInput").value;
+        if (commentText.trim() === "") {
+            alert("El comentario no puede estar vacío.");
+            return;
+        }
+
+        // Obtener los comentarios almacenados en localStorage o inicializar un arreglo vacío
+        let comments = JSON.parse(localStorage.getItem("comments")) || [];
+        comments.push(commentText);
+
+        // Guardar los comentarios actualizados en localStorage
+        localStorage.setItem("comments", JSON.stringify(comments));
+
+        // Limpiar el campo de comentario
+        document.getElementById("commentInput").value = "";
+
+        // Mostrar el mensaje de agradecimiento
+        showThankYouMessage();
+    }
+
+    // Función para cargar los comentarios desde localStorage (sin mostrar en la página)
+    function loadComments() {
+        // Los comentarios se cargan desde localStorage pero no se muestran
+        let comments = JSON.parse(localStorage.getItem("comments")) || [];
+        // No hacer nada con los comentarios, solo mantenerlos guardados
+    }
+
+    // Función para mostrar el mensaje de agradecimiento
+    function showThankYouMessage() {
+        // Crear un elemento de mensaje de agradecimiento
+        const thankYouMessage = document.createElement("div");
+        thankYouMessage.classList.add("thank-you-message");
+        thankYouMessage.textContent = "¡Gracias por tu aportación!";
+
+        // Agregar el mensaje al final de la página
+        document.body.appendChild(thankYouMessage);
+
+        // Eliminar el mensaje después de 3 segundos
+        setTimeout(() => {
+            thankYouMessage.remove();
+        }, 3000);
+    }
+</script>
+
+
+</body>
+</html>
     </section>
 <footer>
    <h1 class="titlep">Jayroom © 2025 Derechos Reservados.</h1>
