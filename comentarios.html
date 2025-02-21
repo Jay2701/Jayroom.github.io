@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título de los comentarios */
+        #commentsSection h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para los comentarios */
+        .comment {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        /* Estilo para el mensaje de agradecimiento */
+        .thank-you-message {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+        }
+
+        /* Botón de volver a la página principal */
+        .back-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn a {
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .back-btn a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Comentarios de Usuarios</h1>
+    </header>
+
+    <div class="container">
+        <section id="commentsSection">
+            <h2>Comentarios</h2>
+            <!-- Los comentarios se cargarán aquí -->
+        </section>
+
+        <div class="back-btn">
+            <a href="index.html">Volver al Inicio</a>
+        </div>
+    </div>
+
+    <script>
+        // Cargar los comentarios desde localStorage cuando la página se carga
+        document.addEventListener("DOMContentLoaded", loadComments);
+
+        function loadComments() {
+            let comments = JSON.parse(localStorage.getItem("comments")) || [];
+            const commentsSection = document.getElementById("commentsSection");
+
+            if (comments.length === 0) {
+                commentsSection.innerHTML = "<p>No hay comentarios aún.</p>";
+            } else {
+                comments.forEach(comment => {
+                    const commentDiv = document.createElement("div");
+                    commentDiv.classList.add("comment");
+                    commentDiv.textContent = comment;
+                    commentsSection.appendChild(commentDiv);
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
